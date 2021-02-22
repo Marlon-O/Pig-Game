@@ -1,11 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
 * {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
 
 body {
-  margin: 0;
-  padding: 0;
-  background-color: aqua;
+  font-family: "Nunito", sans-serif;
+  font-weight: 400;
+  height: 100vh;
+  color: #333;
+  background: #28527a;
+  background: linear-gradient(120deg, #28527a 17%, #28527a 27%, #8ac4d0 98%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.game-section {
+  width: 70vw;
+  height: 95vh;
+  background-color: rgba(255, 255, 255, 0.35);
+  overflow: hidden;
+  border-radius: 9px;
+  -webkit-box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.25);
+          box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.25);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+}
+
+.game-section .player {
+  -webkit-box-flex: 50%;
+      -ms-flex: 50%;
+          flex: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 9rem;
+}
+
+.game-section .player .name {
+  position: relative;
+  font-size: 4rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  word-spacing: 2px;
+  font-weight: 300;
+  margin-bottom: 1rem;
+}
+
+.game-section .player .score {
+  font-size: 8rem;
+  font-weight: 300;
+  color: #28527a;
+  margin-bottom: auto;
+}
+
+.game-section .player .current {
+  background-color: #28527a;
+  opacity: 0.8;
+  border-radius: 9px;
+  color: #fff;
+  width: 65%;
+  padding: 2rem;
+  text-align: center;
+}
+
+.game-section .player .current .current--label {
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  font-size: 1.7rem;
+  color: #ddd;
+}
+
+.game-section .player .current .current--score {
+  font-size: 3.5rem;
+}
+
+.player--active {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+.player--active .name {
+  font-weight: 700;
+}
+
+.player--active .score {
+  font-weight: 400;
+}
+
+.player--active .current {
+  opacity: 1;
 }
 /*# sourceMappingURL=style.css.map */
