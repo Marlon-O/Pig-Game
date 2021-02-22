@@ -97,6 +97,17 @@ body {
   font-size: 3.5rem;
 }
 
+.game-section .dice1 {
+  position: absolute;
+  height: 10rem;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  top: 18rem;
+  -webkit-box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.2);
+          box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.2);
+}
+
 .player--active {
   background-color: rgba(255, 255, 255, 0.4);
 }
