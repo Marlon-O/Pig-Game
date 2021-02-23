@@ -59,6 +59,8 @@ body {
       -ms-flex-align: center;
           align-items: center;
   padding: 9rem;
+  -webkit-transition: all 0.75s;
+  transition: all 0.75s;
 }
 
 .game-section .player .name {
@@ -99,7 +101,7 @@ body {
   font-size: 3.5rem;
 }
 
-.game-section .dice1 {
+.game-section .dice {
   position: absolute;
   height: 10rem;
   left: 50%;

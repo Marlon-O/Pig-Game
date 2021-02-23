@@ -44,6 +44,7 @@ body {
     flex-direction: column;
     align-items: center;
     padding: 9rem;
+    transition: all 0.75s;
 
     .name {
       position: relative;
@@ -84,7 +85,7 @@ body {
     }
   }
 
-  .dice1 {
+  .dice {
     position: absolute;
     height: 10rem;
     left: 50%;
